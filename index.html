@@ -3,11 +3,19 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="normalize.css" />
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="./assets/css/normalize.css" type="text/css" />
+        <link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
+        <link rel="stylesheet" href="./assets/css/flexslider.css" type="text/css" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="./assets/scripts/script.js"></script>
+        <script src="./assets/scripts/hover-interests.js"></script>
+        <script src="./assets/scripts/jquery.flexslider-min.js"></script>
+        <script type="text/javascript" charset="utf-8">
+            $(window).on('load', function() {
+              $('.flexslider').flexslider({directionNav: false});
+                selector: ".slides > .project"
+            });
+          </script>
         <title>Michael Ortiz</title>
     </head>
 
@@ -28,105 +36,140 @@
                 <h1>Hey, I'm Michael.</h1>
                 <h2>I'm a programmer, and some other things too.</h2>
                 <p>Currently: Rutgers University - New Brunswick</p>
-                <a href="#portfolio"><img src="./assets/images/scroll.png" alt="Scroll btn"id="scroll-button" /></a>
+                <a href="#portfolio"><img src="./assets/images/btns/scroll.png" alt="Scroll btn"id="scroll-button" /></a>
             </div>
             <div id="portfolio">
                 <h1 class="section-head">Portfolio</h1>
-                <div class="project">
-                    <div class="grid-pic">
-                        <img src="./assets/images/me.JPG" alt="This Website!" />
-                    </div>
-                    <h2 class="grid-head">micort35.github.io</h2>
-                    <p class="grid-info">
-                        This website! Built in vanilla HTML, CSS, &amp a tiny bit of JS (JQuery), I wanted a short and simple 
-                        website to present myself, both as a prospective hire and a person. Thus, I designed this to give a little snippet
-                        of my life, as well as host my résumé online to facilitate easier access for anyone trying to
-                        fetch it.
-                    </p>
-                    <div class="grid-meta">
-                        <a href="https://github.com/micort35?tab=repositories" target="_blank">
-                        <i class="fas fa-external-link-alt"></i>
-                        </a>
-                        <a href="https://github.com/micort35?tab=repositories" target="_blank">
-                        <i class="fab fa-github"></i>
-                        </a>
-                    </div>
+                <div class="flexslider project">
+                    <ul class="slides">
+                        <li class="card-grid">
+                            <div class="grid-pic">
+                                <img src="./assets/images/portfolio/me.jpg" alt="This Website!" />
+                            </div>
+                            <h2 class="grid-head">micort35.github.io</h2>
+                            <p class="grid-info">
+                                This website! Built in vanilla HTML, CSS, &amp a tiny bit of JS (JQuery), I wanted a short and simple 
+                                website to present myself, both as a prospective hire and a person. Thus, I designed this to give a little snippet
+                                of my life, as well as host my résumé online to facilitate easier access for anyone trying to
+                                fetch it.
+                            </p>
+                            <div class="grid-meta">
+                                <a href="#content-wrapper">
+                                <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/micort35/micort35.github.io" target="_blank">
+                                <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="card-grid">
+                            <div class="grid-pic">
+                                <img src="./assets/images/portfolio/seal.jpg" alt="A cute harbor seal" />
+                            </div>
+                            <h2 class="grid-head">@realsubwoofers</h2>
+                            <p class="grid-info">
+                                Bad day? Would an adorable seal and a wholesome compliment cheer you up?
+                                Follow @realsubwoofers! Deployed via AWS Lambda, this Python bot uses the Twython
+                                API to give a daily shoutout to a random follower, with a motivational message and a 
+                                random selection from a curated library of the most uplifting GIFs or images of
+                                subwoofers (pinnipeds or swimming dogs)!
+                            </p>
+                            <div class="grid-meta">
+                                <a href="https://twitter.com/realsubwoofers" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/micort35/realsubwoofers" target="_blank">
+                                <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <div class="project">
-                    <div class="grid-pic">
-                        <img src="./assets/images/seal.jpg" alt="placeholder" />
-                    </div>
-                    <h2 class="grid-head">@realsubwoofers</h2>
-                    <p class="grid-info">
-                        Bad day? Could you use some gifs of your favorite animal goofing around to cheer you up?
-                        Follow @realsubwoofers! A Python bot using the Twython API, it gives daily shoutouts to random
-                        followers with a motivational message and a random selection from a curated library of the most uplifting
-                        animal gifs or images, with a penchant for pinnipeds (a.k.a. subwoofers).
-                    </p>
-                    <div class="grid-meta">
-                        <a href="https://github.com/micort35?tab=repositories" target="_blank">
-                        <i class="fas fa-external-link-alt"></i>
-                        </a>
-                        <a href="https://github.com/micort35?tab=repositories" target="_blank">
-                        <i class="fab fa-github"></i>
-                        </a>
-                    </div>
+                <div class="flexslider project">
+                    <ul class="slides">
+                        <li class="card-grid">
+                            <div class="grid-pic">
+                                <img src="./assets/images/portfolio/rainmeter.png" alt="A Rainmeter suite by HipHopium on DeviantArt" />
+                            </div>
+                            <h2 class="grid-head">autorainmeter</h2>
+                            <p class="grid-info">
+                                A two part project, utilizing Autohotkey and Python to grant users control and
+                                ease of use in the time-based automatic changing of their Rainmeter suites.
+                                The Autohotkey script is designed as a skeleton such that the user can run
+                                the Python script to easily generate a personal, fleshed-out versoion to 
+                                fulfill their needs and local environment.
+                            </p>
+                            <div class="grid-meta">
+                                <a href="https://github.com/micort35/autorainmeter" target="_blank">
+                                <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-            </div>   
+            </div>
             <div id="experience">
                 <h1 class="section-head">Experience</h1>
-                <div class="project">
-                    <div class="grid-pic">
-                        <img src="./assets/images/CP-logo.jpg" alt="Technical Support" />
-                    </div>
-                    <div class="grid-head">
-                        <h2>Cliffside Park Middle School</h2>
-                        <p><em>Technical Support Officer</em></p>
-                    </div>
-                    <p class="grid-info">
-                        An internship from my senior year of high school, I worked under the head of
-                        technical operations at the middle school in my hometown. Day to day operations
-                        consisted of assisting students and faculty with device administration issues,
-                        technical troubles, and hardware repair.
-                    </p>
-                    <div class="grid-meta">
-                        <p><em>Sep. 2015 - June 2016</em></p>
-                    </div>
+                <div class="flexslider project">
+                    <ul class="slides">
+                        <li class="card-grid">
+                            <div class="grid-pic">
+                                <img src="./assets/images/exp/CPMS.jpg" alt="Technical Support" />
+                            </div>
+                            <div class="grid-head">
+                                <h2>Cliffside Park Middle School</h2>
+                                <p><em>Technical Support Officer</em></p>
+                            </div>
+                            <p class="grid-info">
+                                An internship from my senior year of high school, I worked under the head of
+                                technical operations at the middle school in my hometown. Day to day operations
+                                consisted of assisting students and faculty with device administration issues,
+                                technical troubles, and hardware repair.
+                            </p>
+                            <div class="grid-meta">
+                                <p><em>Sep. 2015 - June 2016</em></p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <div class="project">
-                    <div class="grid-pic">
-                        <img src="./assets/images/download.png" alt="Tutoring" />
-                    </div>
-                    <div class="grid-head">
-                        <h2>Volunteer Tutoring</h2>
-                        <p><em>Tutor</em></p>
-                    </div>
-                    <p class="grid-info">
-                        I taught elementary school students in reading, science, and math, as well
-                        as communicating with the teachers and the parents about performance and potential
-                        areas of improvement. Much of the work involved breaking down topics and 
-                        removing abstractions to foster a grounded understanding of the material.
-                    </p>
-                    <div class="grid-meta">
-                        <p><em>Sep. 2014 - June 2016</em></p>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="grid-pic">
-                        <img src="./assets/images/CPHA.png" alt="Senior Citizen Assistance" />
-                    </div>
-                    <div class="grid-head">
-                        <h2>Cliffside Park Housing Authority</h2>
-                        <p><em>Maintenance Assistant</em></p>
-                    </div>
-                    <p class="grid-info">
-                        Across the multiple grounds of the CPHA, I performed upkeep and maintenance of both the
-                        property grounds as well the residences. If needed, I was tasked, along with coworkers, in
-                        moving residences in and out of the building.
-                    </p>
-                    <div class="grid-meta">
-                        <p><em>Summers: 2015 - 2017</em></p>
-                    </div>
+                <div class="flexslider project">
+                    <ul class="slides">
+                        <li class="card-grid">
+                            <div class="grid-pic">
+                                <img src="./assets/images/exp/tutoring.png" alt="Tutoring" />
+                            </div>
+                            <div class="grid-head">
+                                <h2>Volunteer Tutoring</h2>
+                                <p><em>Tutor</em></p>
+                            </div>
+                            <p class="grid-info">
+                                I taught elementary school students in reading, science, and math, as well
+                                as communicating with the teachers and the parents about performance and potential
+                                areas of improvement. Much of the work involved breaking down topics and 
+                                removing abstractions to foster a grounded understanding of the material.
+                            </p>
+                            <div class="grid-meta">
+                                <p><em>Sep. 2014 - June 2016</em></p>
+                            </div>
+                        </li>
+                        <li class="card-grid">
+                            <div class="grid-pic">
+                                <img src="./assets/images/exp/willie.png" alt="Senior Citizen Assistance" />
+                            </div>
+                            <div class="grid-head">
+                                <h2>Cliffside Park Housing Authority</h2>
+                                <p><em>Maintenance Assistant</em></p>
+                            </div>
+                            <p class="grid-info">
+                                Across the multiple grounds of the CPHA, I performed upkeep and maintenance of both the
+                                property grounds as well the residences. If needed, I was tasked, along with coworkers, in
+                                moving residences in and out of the building.
+                            </p>
+                            <div class="grid-meta">
+                                <p><em>Summers: 2015 - 2017</em></p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
                 <div id="resume">
                     <p><em>Download my résumé in PDF!</em></p>
@@ -140,12 +183,12 @@
                 <div class="list-grid">
                     <div class="grid-icons">
                         <ul>
-                            <li><img src="./assets/images/futbol.png" alt="soccer" id="soccer" /></li>
-                            <li><img src="./assets/images/basketball.png" alt="basketball" id="bball" /></li>
-                            <li><img src="./assets/images/headphones.svg" alt="music" id="music" /></li>
-                            <li><img src="./assets/images/RL.jpg" alt="rocket league" id="RL" /></li>   
-                            <li><img src="./assets/images/GER.png" alt="German" id="ger" /></li>    
-                            <li><img src="./assets/images/SPA.png" alt="Spanish" id="spa" /></li>   
+                            <li><img src="./assets/images/interests/futbol.png" alt="soccer" id="soccer" /></li>
+                            <li><img src="./assets/images/interests/basketball.png" alt="basketball" id="bball" /></li>
+                            <li><img src="./assets/images/interests/headphones.svg" alt="music" id="music" /></li>
+                            <li><img src="./assets/images/interests/RL.jpg" alt="rocket league" id="RL" /></li>   
+                            <li><img src="./assets/images/interests/GER.png" alt="German" id="ger" /></li>    
+                            <li><img src="./assets/images/interests/SPA.png" alt="Spanish" id="spa" /></li>   
                         </ul>
                     </div>
                     <div class="grid-ico-desc">
@@ -154,7 +197,7 @@
                         </p>
                         <p id="soccer-desc">
                             The 2014 World Cup pulled me into the sport and since then I haven't pulled back. Watching
-                            <em>redacted</em> has become a weekly ritual for me, and its introduced me to a good group of friends
+                            has become a weekly ritual for me, and its introduced me to a good group of friends
                             through supporters' organizations. I've also recently made my intramural debut. I play like a horse on
                             ice skates, but it's great cardio, so if anyone is looking for more interesting ways to run, there you have it.
                         </p>
@@ -230,7 +273,7 @@
             <div id="footer">
                 <div class="centering">
                     <a href="#content-wrapper">
-                        <img src="./assets/images/scroll.png" alt="back to top" />;
+                        <img src="./assets/images/btns/scroll.png" alt="back to top" />;
                     </a>
                 </div>
             </div>
