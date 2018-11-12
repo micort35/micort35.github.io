@@ -422,7 +422,7 @@ ul {
     display: grid;
     grid-template: 25% 25% 25% 25% / 50% 50%;
     height: 400px;
-    margin: 0px auto;
+    margin: 0 auto;
     padding-bottom: 30px;
     text-align: center;
     width: 420px;
@@ -602,6 +602,69 @@ ul {
     -ms-flex-pack: center;
     justify-content: center;
     padding-top: 3vh;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 0px) and (max-width: 574px){
+    #portfolio {
+        height: 170vh;
+    }
+
+    #experience {
+        height: 190vh;
+    }
+    
+    .project {
+        display: block;
+        margin: 2.5vh auto 5vh;
+        width: 80vw;
+    }
+
+    .grid-head h2 {
+        font-size: 1.3em;
+    }
+
+    .grid-head {
+        font-size: 1em;
+    }
+
+    .grid-info {
+        font-size: .8em;
+    }
+
+    .grid-meta {
+        font-size: .7em;
+    }
+
+    #interests {
+        height: 90vh;
+    }
+
+    .list-grid {
+        height: 450px;
+        grid-template: 100% / 30% 70%;
+        width: 80vw;
+    }
+
+    .grid-icons {
+        -ms-grid-column: 1;
+        grid-column: 1;
+        text-align: center;
+    }
+    
+    .grid-icons li {
+        display: block;
+        margin: 5px auto;
+    }
+
+    .grid-ico-desc p {
+        width: 190px;
+    }
+
+    #contact {
+        height: 70vh;
+    }
 }
 
 @media only screen and (min-width: 574px) and (max-width: 768px){

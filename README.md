@@ -6,3 +6,8 @@ Simple project written in vanilla HTML & CSS, with a snippet of JQuery, that hos
 
 ## TODO:
 * Continue testing browser support and possible uncovered screen dimensions
+
+## Contributions
+* JQuery team, JQUERY
+* WooCommerce, Flexslider
+* Nicolas Gallagher, normalize.css
