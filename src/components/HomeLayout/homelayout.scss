@@ -1,0 +1,50 @@
+@import "../../styles/variables";
+
+/* LANDING
+   ================================================= */
+
+.intro {
+  display: inline-block;
+  margin-left: 10%;
+  width: 30%;
+}
+
+.intro__header {
+  font-family: $font-header;
+  font-size: 4.5rem;
+  font-weight: 400;
+  margin-bottom: 0.25rem;
+}
+
+.intro__blurb {
+  font-family: $font-subheader;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+.headshot {
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 20%;
+  height: 25%;
+  width: 25%;
+}
+
+
+/* ABOUT 
+   ================================================= */
+
+.portrait {
+  box-shadow: -3rem -3rem 2px rgba(0, 0, 0, 0.25);
+  height: 50%;
+  margin-left: 10%;
+  width: 25%;
+}
+
+.bio {
+  font-family: $font-content;
+  font-size: 1.5rem;
+  margin-left: 18%;
+  width: 35%;
+}

@@ -1,0 +1,42 @@
+---
+jobs:
+  - job:
+      title: "Northwestern Mutual"
+      position: "Associate Systems Engineer"
+      description:
+          "Current position, recently started. Info will be accordingly added."
+      header: false
+      icon: true
+      ico_bg: "#174A75"
+      stack:
+        - "AWS"
+        - "Docker"
+        - "Kubernetes"
+        - "Terraform"
+        - "Python"
+      loc: "New York, NY"
+      period: "Current"
+  - job:
+      title: "Northwestern Mutual"
+      position: "Cloud Platform Engineer Intern"
+      description:
+          "The majority of my work as an intern involved enhancing the CI/CD
+          pipeline, through features such as the automatic upload of
+          documentation to Confluence, or ensuring proper permissions on
+          repositories and their developers. Other work included building an
+          application in Go to help searching through Kubernetes resources
+          as well as diagnosing them, and writing Terraform configurations for
+          AWS Sagemaker."
+      header: false
+      icon: true
+      ico_bg: "#174A75"
+      stack:
+        - "AWS"
+        - "Docker"
+        - "Kubernetes"
+        - "Terraform"
+        - "Python"
+        - "Go"
+      loc: "New York, NY"
+      period: "6/19-8/19"
+    

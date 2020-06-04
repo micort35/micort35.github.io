@@ -1,0 +1,30 @@
+@import "../../styles/variables";
+
+.error__container {
+    height: 40%;
+    margin: 0 auto;
+    padding-top: 20vh;
+    width: 80%;
+}
+
+.error__img {
+    display: inline-block;
+    height: 40%;
+    margin-right: 10%;
+    width: 40%;
+}
+
+.error__header {
+    display: inline-block;
+    font-family: $font-header;
+    font-size: 4rem;
+}
+
+.error__link {
+    border-radius: 8px;
+    color: white;
+    display: inline-block;
+    font-family: $font-subheader;
+    font-size: 2rem;
+    padding: 1rem;
+}

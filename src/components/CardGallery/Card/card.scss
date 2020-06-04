@@ -1,0 +1,88 @@
+@import "../../../styles/variables";
+
+.card {
+  background-color: white;
+  box-shadow: 0 0.25rem 4px rgba(0, 0, 0, 0.25);
+  display: grid;
+  grid-template-columns: 40% 4rem auto;
+  width: 100%;
+}
+
+.card__poster {
+  align-items: center;
+  align-content: center;
+  display: flex;
+  grid-column: 1;
+  justify-content: center;
+}
+
+.card__poster__img {
+  height: 7rem;
+  width: 7rem;
+}
+
+.card__icons {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.card__icon {
+  margin-bottom: .75rem;
+  width: 2.25rem;
+}
+
+.card__content {
+  grid-column: 3;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.card__header {
+  min-width: 50%;
+}
+
+.card__header--text {
+  font-family: $font-header;
+  font-size: 2.25rem;
+  margin: 0 auto;
+}
+
+.card__subheader {
+  font-family: $font-subheader;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0 auto;
+  min-width: 40%;
+}
+
+.card__desc {
+  font-family: $font-content;
+  font-size: 1.25rem;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.card__links {
+  font-family: $font-content;
+  font-size: 1.15rem;
+  margin: 3rem auto 0;
+}
+
+.card__link {
+  border-radius: 8px;
+  box-shadow: 0 0.25rem 4px rgba(0, 0, 0, 0.25);
+  display: inline-block;
+  margin: 0 1rem;
+  padding: 1rem .75rem;
+}
+
+.card__link--accent {
+  color: white;
+}
+
+.card__link__text {
+  display: inline-block;
+  margin: 0 .5rem 0 0;
+}

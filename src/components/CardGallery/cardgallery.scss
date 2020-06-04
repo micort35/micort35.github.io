@@ -1,0 +1,9 @@
+@import "../../styles/variables";
+
+.gallery {
+  display: grid;
+  gap: 10% 5%;
+  grid-template-columns: repeat(2, 45%);
+  grid-template-rows: repeat(auto-fill, 24rem);
+  min-height: 60vh; // TODO: Fix hack
+}

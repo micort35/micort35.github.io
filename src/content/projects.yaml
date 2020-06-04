@@ -1,0 +1,44 @@
+---
+projects:
+  - project:
+      title: "micort35.me"
+      description: "A landing platform for employers or anyone else interested
+        to take a deeper dive into my life as a software engineer. In general,
+        the site is supposed to serve as an extended resume, closer to an
+        informal cirriculum vitae. Currently in active development."
+      header: false
+      icon: false
+      stack:
+        - "Gatsby"
+        - "Sass"
+      links:
+        src: "https://github.com/micort35/micort35.github.io"
+        site: "https://micort35.me"
+      wip: true
+  - project:
+      title: "autorainmeter"
+      description: "A companion to the popular desktop customization app
+        Rainmeter, autorainmeter adds extra functionality. The primary
+        function of the app is the ability to provide customizable
+        shuffling of desktop suites. Currently rebuilding from the ground up."
+      header: false
+      icon: false
+      stack:
+        - "Python"
+      links:
+        src: "https://github.com/micort35/autorainmeter"
+      wip: true
+  - project:
+      title: "realsubwoofers"
+      description: "A Twitter bot to brighten up people's days by randomly
+        tweeting motivating messages and GIFs or images of subwoofers,
+        that being pinnipeds or any dogs partaking in aquatic activities.
+        Currently in the process of adding features."
+      header: false
+      icon: false
+      stack:
+        - "AWS"
+        - "Python"
+      links:
+        src: "https://github.com/micort35/autorainmeter"
+        site: "https://twitter.com/realsubwoofers"

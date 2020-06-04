@@ -1,0 +1,100 @@
+@import "./variables";
+
+/* STYLING 
+   ================================================= */
+
+.content {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.section {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.section__header {
+  font-family: $font-header;
+  font-size: 2.25rem;
+  padding-top: 10rem;
+  text-align: center;
+}
+
+.highlight {
+  color: map-get($light-palette, "light-accent");
+}
+
+.accent-hover {
+  transition: .25s linear;
+
+  &:hover {
+    color: map-get($light-palette, "light-accent");
+  }
+}
+
+.elevate-hover {
+  transition: .25s linear;
+
+  &:hover {
+    color: map-get($light-palette, "light-elevated");
+  }
+}
+
+
+/* UNIVERSAL MODIFIERS
+   ================================================= */
+
+@each $name, $color in $light-palette {
+  .color-#{$name} {
+    color: $color;
+  }
+}
+
+@each $name, $color in $light-palette {
+  .bg-#{$name} {
+    background-color: $color;
+  }
+}
+
+.pt-20 {
+  padding-top: 20rem;
+}
+
+.pt-15 {
+  padding-top: 15rem;
+}
+
+.pt-10 {
+  padding-top: 10rem;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+
+/* RESETS 
+   ================================================= */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0 0;
+  padding: 0 0;
+}
+
+li {
+  list-style: none;
+}
+
+
+/* TAG STYLING 
+   ================================================= */
+
+html {
+  scroll-behavior: smooth;
+}

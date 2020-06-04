@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Julius+Sans+One&family=Source+Sans+Pro&display=swap");
+
+/* COLOR PALETTE 
+   ================================================= */
+
+$light-palette: (
+  "light-surface": #f6f6f6,
+  "light-elevated": #ffffff,
+  "light-primary": #4980ed,
+  "light-accent": #c12828,
+  "light-footer": #242124,
+);
+
+$dark-palette: (
+  "dark-surface": #242124,
+  "dark-elevated": #2f3337,
+  "dark-primary": #b8dcf5,
+  "dark-accent": #ffdbdb,
+  "dark-footer": #fed766,
+);
+
+/* FONTS 
+   ================================================= */
+$font-header: "Julius Sans One", "Arial";
+$font-subheader: "Archivo Narrow", "Times New Roman";
+$font-content: "Source Sans Pro", "Times New Roman";
+
+/* BREAKPOINTS 
+   ================================================= */
